@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Don Vito's Bistro</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/DonVitosBistro.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav" onclick="myFunction()">
+        <div class="container px-4">
+            <a class="navbar-brand" href="#page-top">Don Vito's Bistro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#page-top">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#menu" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Menu</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#menu">Appetizers</a></li>
+                            <li><a class="dropdown-item" href="#menu"> Soups/Salads</a>
+                            <li><a class="dropdown-item" href="#menu">Mains</a></li>
+                            <li><a class="dropdown-item" href="#menu">Desserts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reservations">Reservations</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header-->
+    <header class="bg-gradient text-white">
+        <div class="container px-4 text-cente dvb-header">
+            <h1 class="fw-bolder dvb-shadow" id="font-1">Welcome to Don Vito's Bistro!<h1>
+                    <p class="lead dvb-shadow">Your hometown place for casual fine dining.</p>
+                    <a class="btn btn-lg btn-light" href="#about">About Us</a>
+        </div>
+    </header>
+    <!-- About section-->
+    <section id="about">
+        <div class="container px-4 bg-light">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <h2>About Us</h2>
+                    <p class="lead">
+                        We are a family-owned restaurant, featuring the delightful flavors of Old World Italy offered up
+                        by Chef Vito Pasquale.
+                        Our restaurant has been proudly serving customers since 1998.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Menu section-->
+    <section id="menu">
+        <div class="container px-4 bg-light">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <h2>Menu</h2>
+                    <p class="lead"></p>
+                    <!-- Tab links -->
+                    <div class="tab">
+                        <button class="tablinks" onclick="openMenu(event, 'Appetizers')">Appetizers</button>
+                        <button class="tablinks" onclick="openMenu(event, 'Soups/Salads')">Soups/Salads</button>
+                        <button class="tablinks" onclick="openMenu(event, 'Mains')">Mains</button>
+                        <button class="tablinks" onclick="openMenu(event, 'Desserts')">Desserts</button>
+                    </div>
+
+                    <!-- Tab content -->
+                    <div id="Appetizers" class="tabcontent">
+                        <h3>Appetizers</h3>
+                        <ul>
+                            <li><strong>Roasted Eggplant Spread</strong></li>
+                            <p>Black pepper and garlic perk up this out-of-the-ordinary spread that hits the spot on a
+                                crisp cracker or toasted bread slice. </p>
+                            <li><strong>Calamari</strong></li>
+                            <p>Tender calamari, lightly breaded and fried. Served with marinara sauce and spicy ranch.
+                            </p>
+                            <li><strong>Toasted Ravioli</strong></li>
+                            <p>Bigger with more filling! Lightly fried ravioli filled with seasoned beef. Served with
+                                homemade marinara sauce.</p>
+                            <li><strong>Stuffed Ziti Fritta</strong></li>
+                            <p>Crispy fried ziti filled with five cheeses. Served with alfredo and marinara dipping
+                                sauces.</p>
+                        </ul>
+
+                    </div>
+
+                    <div id="Soups/Salads" class="tabcontent">
+                        <h3>Soups/Salads</h3>
+                        <ul>
+                            <li><strong>Our Famous House Salad</strong></li>
+                            <p>Our Famous House Salad served with our signature Italian dressing (served on the side).
+                                Includes two breadsticks.</p>
+                            <li><strong>Chicken & Gnocchi</strong></li>
+                            <p>A creamy soup made with roasted chicken, traditional Italian dumplings and spinach.</p>
+                            <li><strong>Pasta e Fagioli</strong></li>
+                            <p>White and red beans, ground beef, fresh tomatoes and tubetti pasta in a savory broth.</p>
+                            <li><strong>Minestrone</strong></li>
+                            <p>Fresh vegetables, beans and pasta in a light tomato broth - a vegan classic.</p>
+                        </ul>
+
+                    </div>
+
+                    <div id="Mains" class="tabcontent">
+                        <h3>Mains</h3>
+                        <ul>
+                            <li><strong>Chicken Saltimbocca</strong></li>
+                            <p>A version of the Roman classic that uses chicken cutlets, sage and prosciutto pan-fried
+                                until crispy and served with the simplest white wine sauce. We serve ours with rosemary
+                                cannellini beans for a delicious and easy side.</p>
+                            <li><strong>Veal Milanese</strong></li>
+                            <p>(Cotoletta alla Milanese) is a traditional recipe from Milan, Lombardy. Made with tender
+                                veal chops and a crispy breadcrumb coating fried in butter and drizzled with lemon, so
+                                delicious! Serve with an arugula salad and roast potatoes.</p>
+                            <li><strong>Vegetable Ragu</strong></li>
+                            <p>An incredible Vegetable Ragu that's so rich in flavour you'd never know it's meat-free!
+                                Made with beautiful and simple vegetables, fresh herbs and garlic. Toss with your
+                                favourite pasta and top with plenty of parmesan cheese!
+
+                            </p>
+                            <li><strong>Steak Tagliata</strong></li>
+                            <p>Juicy, chargrilled Steak Tagliata served with a fresh, bright and zingy tomato, herb
+                                salad with creamy buffalo mozzarella cheese. If you're looking for a fresh and delicious
+                                way to serve steak that's perfect for summer, this is it!</p>
+                        </ul>
+                    </div>
+                    <div id="Desserts" class="tabcontent">
+                        <h3>Desserts</h3>
+                        <ul>
+                            <li><strong>Cannoli with vanilla custard</strong></li>
+                            <p>Savour the rich vanilla custard centre of these sweet, crispy-coated Italian delicacies.
+                            </p>
+                            <li><strong>Tiramisu</strong></li>
+                            <p>Tiramisu is an Italian dessert that translates to “pick me up”, and it certainly does
+                                just that. This trifle-style dessert consists of layers upon layers of delicious
+                                savoiardi sponge finger biscuits that have been dipped in coffee and layered with
+                                creamy.</p>
+                            <li><strong>Vanilla and cinnamon panna cotta</strong></li>
+                            <p>Fancy something sweet and low-fat? Make this super-easy panna cotta with shop-bought
+                                yoghurt and passionfruit.</p>
+                            <li><strong>Choc-hazelnut budino</strong></li>
+                            <p>Italian for "pudding", this choc-hazelnut budino is velvety smooth on the tongue and rich
+                                in taste.</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact section-->
+    <section id="contact">
+        <div class="container px-4 bg-light">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <h2>Contact us</h2>
+                    <h3>Hours of operation:</h3>
+                    <ul>
+                        <li>Sun-Thu 10:00am-9:00pm</li>
+                        <li>Fri-Sat 10:00am-11:00pm</li>
+                    </ul>
+                    <h3>Address:</h3>
+                    <P>1234 Main Street,<br>
+                        Raleigh, NC 27655</P>
+                    <p><strong>Phone:</strong>(919)123-4567</p>
+                    <p><strong>Email:</strong><span id="securedEmail"></span></p>
+
+                    <div style="overflow:hidden;max-width:100%;width:500px;height:500px;">
+                        <div id="embed-ded-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe
+                                style="height:100%;width:100%;border:0;" frameborder="0"
+                                src="https://www.google.com/maps/embed/v1/place?q=1234+Main+Street,+Raleigh,+NC,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                        </div><a class="google-map-code-enabler" href="https://kbj9qpmy.com/hrn"
+                            id="make-map-infor-mation">InMotion Hosting</a>
+                        <style>
+                            #embed-ded-map-canvas img.text-marker {
+                                max-width: none !important;
+                                background: none !important;
+                            }
+
+                            img {
+                                max-width: none
+                            }
+                        </style>
+                    </div>
+
+
+                    <p class="lead"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Reservations section-->
+    <section id="reservations">
+        <div class="container px-4 bg-light">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <h2>Reservations</h2>
+                    <!-- Example: -->
+                    <div class="reservationForm">
+                        <h1>Reserve a Table</h1>
+                        <form id="reservationForm">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" required>
+
+                            <label for="phone">Phone Number:</label>
+                            <input type="phone" id="phone" placeholder="Format:123-456-7890" required>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" required>
+
+                            <label for="date">Date:</label>
+                            <input type="date" id="date" required>
+
+                            <label for="time">Time:</label>
+                            <input type="time" id="time" required>
+
+                            <label for="comments">Comments:</label>
+                            <textarea id="comments" name="comments" placeholder=""
+                                style="width:400px, hight:100px"></textarea>
+
+                            <button type="submit">Reserve</button>
+                        </form>
+                    </div>
+
+                    <p class="lead"></p>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container px-4">
+            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <script src="js/DonVitosBistro.js" type="text/javascript"></script>
+</body>
+
+</html>
